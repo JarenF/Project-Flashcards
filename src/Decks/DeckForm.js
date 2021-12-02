@@ -42,7 +42,7 @@ export default function DeckForm({ handleCancel }) {
         if (path === "/decks/new") {
           handleSubmit();
           setFormData({ ...initialFormData });
-          history.push("/").go(0);
+          history.push(`/decks/${savedDeck.id}`);
         } else {
           handleSubmit();
           setFormData({ ...initialFormData });
